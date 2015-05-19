@@ -4,31 +4,52 @@
 	padding-bottom: calc(100% * 3 / 4);
 }
 
+/* Fallback for browsers that don't support svg. */
 .no-svg .logo{
 	background: url("../images/altos_logo.png");
 	width: 117px;
 	height: 43px;
 }
 
+.bag{
+	background: url("../images/bag.png");
+	width: 32px;
+	height: 32px;
+}
+
 .mobileDropdown {
-  background: #333333;
+  background: #fff;
   border: 0;
   border-radius: 6px;
-  border-top: 3px solid #666666;
   cursor: pointer;
   padding: 6px 5px 8px;
 }
+
 .mobileDropdown:hover {
   background: #3d3d3d;
 }
+
 .mobileDropdown:active {
   background: #111111;
 }
+
 .mobileDropdown span {
-  background: #ffffff;
+  background: #333;
   border-radius: 10px;
   display: block;
   height: 4px;
   margin: 0 0 5px;
   width: 30px;
+}
+
+.real{
+	background: url("../images/real_mts.png");
+	width: 280px;
+	height: 175px;
+}
+
+.blue{
+	background: url("../images/blue_mts.png");
+	width: 280px;
+	height: 175px;
 }
