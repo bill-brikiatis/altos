@@ -11,19 +11,21 @@
 <body>
 	<div class="page-wrap">
 		<header>
-			<div class="logo" title="Altos"></div>
+			<div class="logo" title="Altos" id="logo"></div>
 			<div class="altos_white" title="Altos"></div>
 			<div class="corner_links">
 				<div class="search">
-					<h3 class="search_label">search</h3>
-					<i class="fa fa-search"></i>
-				</div>
+					<div class="underline">
+						<h3 class="search_label">search</h3>
+						<i class="fa fa-search search1"></i>
+					</div> <!-- .underline -->
+				</div> <!-- .search -->
 			</div> <!-- .corner_links -->
-				<i class="fa fa-search search_color"></i>
+				<!-- <i class="fa fa-search search_color"></i> -->
 				<h3 class="account"><a href="#">my account</a></h3>
-				<div class="bag"></div>
+				<div class="bag" id="bag"></div>
 				<h3 class="bag_text"><a href="#">my bag</a></h3>
-				<button class="mobileDropdown">
+				<button class="mobileDropdown" id="mobileDropdown">
 					  <span></span>
 					  <span></span>
 					  <span></span>
@@ -55,5 +57,6 @@
 	</div> <!-- .cover -->
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="js/altos.js"></script>
 </body>
 </html>
