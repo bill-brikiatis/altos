@@ -33,7 +33,7 @@ div.search>i{
 	width: 32px;
 	height: 32px;
 	float:left;
-	margin:22px 8px 0 50px;
+	margin:22px 8px 0 45px;
 }
 
 .mobileDropdown {
@@ -42,9 +42,9 @@ div.search>i{
   border: 0;
   border-radius: 6px;
   cursor: pointer;
-  padding: 6px 5px 8px;
+  padding: 6px px 8px;
   float:left;
-  margin:20px 0 0 5px;
+  margin:20px 0 0 0px;
 }
 
 .mobileDropdown:hover {
