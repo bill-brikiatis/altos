@@ -153,8 +153,24 @@ h3.search_label{
 
 nav{
 	display:block;
+	float:left;
 	background: #000;
+	color: #fff;
+	z-index: 1;
 }
+
+nav ul{
+	list-style-type: none;
+	padding:0;
+	text-transform: capitalize;
+}
+
+nav > ul> li > a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav > ul > li > a:after {content: '<i class="fa fa-caret-down"'; }
 
 .corner_links{
 	display:none;
