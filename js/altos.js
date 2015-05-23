@@ -1,7 +1,14 @@
 $(document).ready(function(){
 	$("#mobileDropdown").click(function(){
-		$("#logo").css("display", "none");
-		$("#bag").css("display", "none");
+		//$("#logo").css("display", "none");
+		//$("#bag").css("display", "none");
+		//$("#mobileDropdown").css("display", "none");
+		$("#page-wrap").css("marginLeft", "-240px");
+		$("#search").css({
+			display : "block", 
+			margin: "-20px 0 0 280.1px",
+			width : "97%" 
+		});
 		$("#mobileDropdown").css("display", "none");
 	});
 });
