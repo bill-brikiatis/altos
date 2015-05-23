@@ -6,10 +6,12 @@ $(document).ready(function(){
 		$("#page-wrap").css("marginLeft", "-240px");
 		$("#search").css({
 			display : "block", 
-			margin: "-20px 0 0 280.1px",
-			width : "97%" 
+			margin: "-60px 0 0 280.1px",
+			width : "97%",
+			background : "#000"
 		});
 		$("#mobileDropdown").css("display", "none");
+		$("div#close > i").css("display", "block");
 	});
 });
 
