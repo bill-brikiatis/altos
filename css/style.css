@@ -1,5 +1,9 @@
 /*Mobile first css*/
 
+body{
+	overflow:hidden;
+}
+
 .page-wrap {
      width: 280px;
      margin: 0 auto;
@@ -77,6 +81,8 @@ header{
 	background: url("../images/blue_mts.png");
 	width: 280px;
 	height: 175px;
+	margin-right:0;
+	z-index: -1;
 }
 
 /*Mobile menu*/
@@ -93,6 +99,7 @@ div#close > i{
 	display:none;
 	margin: 0 0 0 240px;
 	font-size: 35px;
+	cursor:pointer;
 	z-index: -1;
 }
 
@@ -125,9 +132,67 @@ h3.search_label{
 	background:#000;
 }
 
+nav{
+	display:none;
+	width: 272px;
+	margin:25px 0 0 0;
+	float:left;
+	background: #000;
+	color: #fff;
+	z-index: 1;
+}
+
+nav ul{
+	list-style-type: none;
+	padding:0;
+	text-transform: capitalize;
+	width:80%;
+	margin:0 auto;
+}
+
+nav > ul > li > a, nav > ul > li > ul > li > a{
+	font:16px arial, sans-serif;
+	line-height: 2.5;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+
+.arrow-down {
+	display: inline-block;
+	width: 0;
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 11px solid #fff;
+	margin-left:102px;
+}
+
+nav > ul > li > a{
+	text-transform: uppercase;
+}
+
+nav > ul > li > ul > li > a{
+	text-transform: capitalize;
+}
+
+nav > ul > li > ul{
+	display:none;
+	background-color: #999999;
+	margin: 0 0 0 -27px;
+	padding: 0 24px 0 30px;
+	width:100%;
+	z-index: 2;
+}
+
 .name{
 	font: 18px arial, sans-serif;
 	text-transform: capitalize;
+	width: 180px;
+	height: 21px;
+	margin-right:0px;
+	padding:0;
+	z-index: -1;
 }
 
 /*After media query*/
@@ -150,27 +215,6 @@ h3.search_label{
 	display:none;
 	color:#fff;
 }
-
-nav{
-	display:block;
-	float:left;
-	background: #000;
-	color: #fff;
-	z-index: 1;
-}
-
-nav ul{
-	list-style-type: none;
-	padding:0;
-	text-transform: capitalize;
-}
-
-nav > ul> li > a{
-	text-decoration: none;
-	color: #fff;
-}
-
-nav > ul > li > a:after {content: '<i class="fa fa-caret-down"'; }
 
 .corner_links{
 	display:none;

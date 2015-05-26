@@ -1,8 +1,5 @@
 $(document).ready(function(){
 	$("#mobileDropdown").click(function(){
-		//$("#logo").css("display", "none");
-		//$("#bag").css("display", "none");
-		//$("#mobileDropdown").css("display", "none");
 		$("#page-wrap").css("marginLeft", "-240px");
 		$("#search").css({
 			display : "block", 
@@ -10,9 +7,18 @@ $(document).ready(function(){
 			width : "97%",
 			background : "#000"
 		});
+		$('nav').css("display", "block");
 		$("#mobileDropdown").css("display", "none");
 		$("div#close > i").css("display", "block");
 	});
+
+	$("li.top").click(function(){
+		if($(this).children("ul.sub_menu").length){
+			$(this).children("ul.sub_menu").toggle();
+		}
+	});
+
+	$("#close").click(function(){
+		location.reload(true);
+	});
 });
-
-
