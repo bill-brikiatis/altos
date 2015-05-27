@@ -195,50 +195,78 @@ nav > ul > li > ul{
 	z-index: -1;
 }
 
-/*After media query*/
+@media (min-width: 700px){
 
-/*.cover{
-	display:none;
-	background: url("../images/real_full.png") no-repeat;
-	width: 100%;
-	height: 100%;
-}*/
+	html { 
+	 	background: url("../images/real_full.png") no-repeat center top fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 
-.altos_white{
-	display:none;
-	background: url("../images/altos_white.png") no-repeat;
-	width: 122px;
-	height: 45px;
+	.logo{
+		display:none;
+	}
+
+	.bag{
+		display: none;
+	}
+
+	.mobileDropdown{
+		display: none;
+	}
+
+	.real{
+		display: none;
+	}
+
+	.blue{
+		display: none;
+	}
+
+	.page-wrap{
+		width:75%;
+		margin:0 auto;
+	}
+
+	.altos_white{
+		display:block;
+		float:left;
+		background: url("../images/altos_white.png") no-repeat;
+		width: 122px;
+		height: 45px;
+
+	}
+
+	.search_color{
+		display:none;
+		color:#fff;
+	}
+
+	.corner_links{
+		display:none;
+	}
+
+	.account{
+		display: none;
+	}
+
+	.bag_text{
+		display: none;
+	}
+
+
+	.view{
+		display: none;
+	}
+
+	header>i.search_color{
+		display:none;
+		color:#fff;
+	}
+
 }
-
-.search_color{
-	display:none;
-	color:#fff;
-}
-
-.corner_links{
-	display:none;
-}
-
-.account{
-	display: none;
-}
-
-.bag_text{
-	display: none;
-}
-
-
-.view{
-	display: none;
-}
-
-header>i.search_color{
-	display:none;
-	color:#fff;
-}
-
-
 
 
 
