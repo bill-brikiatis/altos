@@ -7,7 +7,11 @@ $(document).ready(function(){
 			width : "97%",
 			background : "#000"
 		});
-		$('nav').css("display", "block");
+		$('nav').css({
+			display: "block",
+			margin: "0 0 -240px 280.1px",
+			width: "97%",
+		});
 		$("#mobileDropdown").css("display", "none");
 		$("div#close > i").css("display", "block");
 	});

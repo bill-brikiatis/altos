@@ -15,6 +15,14 @@ header{
 	height: 82px;
 }
 
+.bag_text{
+	display: none;
+}
+
+.account{
+	display: none;
+}
+
 .logo{
 	width:145px;
 	height:60px;
@@ -35,6 +43,10 @@ header{
 	height: 32px;
 	float:left;
 	margin:22px 8px 0 45px;
+}
+
+.view{
+	display: none;
 }
 
 .mobileDropdown {
@@ -69,6 +81,10 @@ header{
 
 .mobileDropdown:hover > span, .mobileDropdown:active > span {
 	background: #fff;
+}
+
+i.fa.search2{
+	display:none;
 }
 
 .real{
@@ -205,6 +221,11 @@ nav > ul > li > ul{
 		background-size: cover;
 	}
 
+	div.altos_white{
+		width:50%;
+		height:50px;
+	}
+
 	.logo{
 		display:none;
 	}
@@ -213,8 +234,59 @@ nav > ul > li > ul{
 		display: none;
 	}
 
+	.corner_links{
+		display:block;
+		float:right;
+		font:14px arial, sans-serif;
+		width:50%;
+		height:50px;
+	}
+
+	.corner_links a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+	i.fa.search2{
+		float:right;
+		display:inline-block;
+		margin: 0 35px 0 0;
+		font-size: 20px;
+	}
+
+	.account{
+		float: right;
+		display:inline-block;
+		text-transform: capitalize;
+		margin: 0 25px 0 0;
+	}
+
+	.bag_text{
+		float:right;
+		display: inline-block;
+		text-transform: capitalize;
+		margin-top: 0;
+	}
+
 	.mobileDropdown{
 		display: none;
+	}
+
+	/* Navigation */
+
+	nav{
+		display:block;
+		background: none;
+		float:right;
+		margin:0;
+	}
+
+	nav > ul{
+		width: 500px;
+	}
+
+	nav > ul > li{
+		display: inline-block;
 	}
 
 	.real{
@@ -236,29 +308,11 @@ nav > ul > li > ul{
 		background: url("../images/altos_white.png") no-repeat;
 		width: 122px;
 		height: 45px;
-
 	}
 
 	.search_color{
 		display:none;
 		color:#fff;
-	}
-
-	.corner_links{
-		display:none;
-	}
-
-	.account{
-		display: none;
-	}
-
-	.bag_text{
-		display: none;
-	}
-
-
-	.view{
-		display: none;
 	}
 
 	header>i.search_color{
