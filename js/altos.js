@@ -25,4 +25,20 @@ $(document).ready(function(){
 	$("#close").click(function(){
 		location.reload(true);
 	});
+
+	$(window).resize(function(){
+		if($(window).width() > 699){
+			$(".arrow-down").css("display", "none");
+		}
+	});
+
+	if($(window).width() > 699){
+		$(".arrow-down").css("display", "none");
+	}
+
+	var first = $("ul li.top:first");
+	var last = $("ul li.top:last");
+	first.appendTo(first.parent());
+	last.prependTo(last.parent());
+	
 });

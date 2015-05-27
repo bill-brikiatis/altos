@@ -5,9 +5,9 @@ body{
 }
 
 .page-wrap {
-     width: 280px;
-     margin: 0 auto;
-     z-index: 0;
+    width: 280px;
+    margin: 0 auto;
+    z-index: 0;
 }
 
 header{
@@ -247,6 +247,11 @@ nav > ul > li > ul{
 		text-decoration: none;
 	}
 
+	.corner_links > h3{
+		font-style: normal;
+		font-weight: 400;
+	}
+
 	i.fa.search2{
 		float:right;
 		display:inline-block;
@@ -279,14 +284,39 @@ nav > ul > li > ul{
 		background: none;
 		float:right;
 		margin:0;
+		width:100%;
 	}
 
 	nav > ul{
-		width: 500px;
+		width:50%;
+		float:right;
 	}
 
 	nav > ul > li{
 		display: inline-block;
+		float: right;
+		margin:0 0 0 35px;
+	}
+
+	nav > ul > li > ul{
+		background: #fff;
+		margin:0;
+	}
+
+	nav > ul > li > ul > li > a{
+		color:#000;
+	}
+
+	nav > ul > li {
+		position: relative;
+		z-index: 100;
+	}
+	
+	.sub_menu{
+		z-index:200;
+		position:absolute;
+		top: 40px;
+		width:180px;
 	}
 
 	.real{
