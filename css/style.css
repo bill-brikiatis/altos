@@ -1,7 +1,7 @@
 /*Mobile first css*/
 
 body{
-	overflow:hidden;
+	overflow-x:hidden;
 }
 
 .page-wrap {
@@ -99,6 +99,10 @@ i.fa.search2{
 	height: 175px;
 	margin-right:0;
 	z-index: -1;
+}
+
+#two_bars{
+	display: none;			
 }
 
 /*Mobile menu*/
@@ -252,6 +256,10 @@ nav > ul > li > ul{
 		font-weight: 400;
 	}
 
+	.search{
+		display:none;
+	}
+
 	i.fa.search2{
 		float:right;
 		display:inline-block;
@@ -301,7 +309,7 @@ nav > ul > li > ul{
 		border-bottom: 1px solid #fff;
 	}
 
-	body.v a.v{
+	body.v a.v, .menu_under{
 		border-bottom: 1px solid #fff;
 	}
 
@@ -319,7 +327,15 @@ nav > ul > li > ul{
 		position: relative;
 		z-index: 100;
 	}
-	
+
+	.close{
+		display:none;
+	}
+
+	.search{
+		display:none;
+	}
+
 	.sub_menu{
 		z-index:200;
 		position:absolute;
@@ -359,6 +375,63 @@ nav > ul > li > ul{
 		color:#fff;
 	}
 
+	#blue_name{
+		display: none;
+	}
+
+	#real_name{
+		display: block;
+		height:52px;
+		color:#fff;
+		text-transform: capitalize;
+		font:52px arial, sans-serif;
+		width: 	100%;
+		margin:275px 0 0 0;
+	}
+
+	.view{
+		display:block;
+		border:2px solid #fff;
+		width:170px;
+		height:50px;
+		text-align: center;
+		margin:30px 0 0 0;
+	}
+
+	.highlight{
+		background: #fff;
+	}
+
+	div.view.highlight a{
+		color:#000;
+	}
+
+	.view a{
+		display: block;
+		color:#fff;
+		text-decoration: none;
+		font:14px arial, sans-serif;
+		text-transform: capitalize;
+		line-height:50px;
+	}
+
+	#two_bars{
+		width:100%;
+		display: block;
+	}
+	
+	#bar1, #bar2{
+		display:block;
+		float:left;
+		width: 68px;	
+		height: 8px;
+		margin:80px 8px 0 0;
+		border:1px solid #fff;	
+	}
+
+	#bar1{
+		background:#fff;
+	}
 }
 
 
