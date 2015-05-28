@@ -25,8 +25,10 @@ $(document).ready(function(){
 	});
 
 	$("#close").click(function(){
-		location.reload(true);
+		location.reload();
 	});
+
+	// Shows & hides sub menu arrow.
 
 	function toggleArrow(){
 		if($(window).width() > 699){
@@ -41,19 +43,22 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		toggleArrow();
-		// $(".search").css("display", "none");
-		// $(".page-wrap").css("margin", "0 auto");
-		location.reload(true);
+		location.reload();
 	});
 
 	toggleArrow();
 
 
-// Changes background image. Takes in elements, path to image
+// Changes background image, mountain name. Takes in elements, path to image
 	function changeBackground(el_id_1, el_id_2, img){
-		$("el_id_1").css('background-color', 'transparent');
-		$("el_id_2").css('background-color', 'transparent');
-		$("html").css('background', 'url(' + img + ') no-repeat center top fixed');
+		$(el_id_1).css('background-color', '#fff');
+		$(el_id_2).css('background-color', 'transparent');
+		$("html").css({
+			background : 'url(' + img + ') no-repeat center top fixed',
+			backgroundSize : 'cover'
+		});
+		$('#real_name').toggle();
+		$('#blue_name').toggle();
 	}
 
 	$("#bar2").click(function(){
@@ -63,11 +68,11 @@ $(document).ready(function(){
 		changeBackground(el_id_1, el_id_2, img);
 	});
 
-	// $("#bar1").click(function(){
-	// 	var el_id_1 = "#bar1";
-	// 	var el_id_2 = "#bar2";
-	// 	var img = "images/real_full.png";
-	// 	changeBackground(el_id_1, el_id_2, img);
-	// });
+	$("#bar1").click(function(){
+		var el_id_1 = "#bar1";
+		var el_id_2 = "#bar2";
+		var img = "images/real_full.png";
+		changeBackground(el_id_1, el_id_2, img);
+	});
 	
 });

@@ -377,6 +377,12 @@ nav > ul > li > ul{
 
 	#blue_name{
 		display: none;
+		height:52px;
+		color:#fff;
+		text-transform: capitalize;
+		font:52px arial, sans-serif;
+		width: 	100%;
+		margin:275px 0 0 0;
 	}
 
 	#real_name{
