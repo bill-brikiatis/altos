@@ -288,19 +288,27 @@ nav > ul > li > ul{
 	}
 
 	nav > ul{
-		width:50%;
-		float:right;
+		width: 100%;
+		text-align:right;
 	}
 
 	nav > ul > li{
-		display: inline-block;
-		float: right;
+		display: inline;
 		margin:0 0 0 35px;
+	}
+
+	nav > ul > li > a:active{
+		border-bottom: 1px solid #fff;
+	}
+
+	body.v a.v{
+		border-bottom: 1px solid #fff;
 	}
 
 	nav > ul > li > ul{
 		background: #fff;
 		margin:0;
+		text-align:left;
 	}
 
 	nav > ul > li > ul > li > a{
@@ -315,6 +323,7 @@ nav > ul > li > ul{
 	.sub_menu{
 		z-index:200;
 		position:absolute;
+		left:0;
 		top: 40px;
 		width:180px;
 	}
