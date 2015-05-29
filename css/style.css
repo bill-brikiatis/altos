@@ -42,7 +42,7 @@ header{
 	width: 32px;
 	height: 32px;
 	float:left;
-	margin:22px 8px 0 45px;
+	margin:22px 10px 0 45px;
 }
 
 .view{
@@ -55,9 +55,9 @@ header{
   border: 0;
   border-radius: 6px;
   cursor: pointer;
-  padding: 6px px 8px;
+  padding: 6px 2px 8px 2px;
   float:left;
-  margin:20px 0 0 0px;
+  margin:20px 0 0 5px;
 }
 
 .mobileDropdown:hover {

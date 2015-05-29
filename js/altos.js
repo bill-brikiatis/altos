@@ -25,7 +25,7 @@ $(document).ready(function(){
 	});
 
 	$("#close").click(function(){
-		location.reload();
+		location.reload(false); /* false to get page from cache */
 	});
 
 	// Shows & hides sub menu arrow.
@@ -33,20 +33,28 @@ $(document).ready(function(){
 	function toggleArrow(){
 		if($(window).width() > 699){
 			$(".arrow-down").css("display", "none");
-			console.log("this is if");
+			$("#search").css("display", "none");
+			$("#page-wrap").css("margin", "0 auto");
 		}
 		else{
 			$(".arrow-down").css("display", "inline-block");
-			console.log("this is else");
 		}
 	}
 
 	$(window).resize(function(){
 		toggleArrow();
-		location.reload();
 	});
 
 	toggleArrow();
+
+
+	//refresh page on browser resize
+	$(window).bind('resize', function(e){
+  		if (window.RT) clearTimeout(window.RT);
+  		window.RT = setTimeout(function(){
+    		this.location.reload(false); /* false to get page from cache */
+  		}, 200);
+	});
 
 
 // Changes background image, mountain name. Takes in elements, path to image
@@ -75,4 +83,4 @@ $(document).ready(function(){
 		changeBackground(el_id_1, el_id_2, img);
 	});
 	
-});
+}); //document.ready
